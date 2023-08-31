@@ -1,0 +1,13 @@
+{
+  "components": {
+    "src/widget/components.NavigationBar.LeftNav.index": {
+      "code": "import { IoMenu } from 'react-icons/io5'\nimport { Link } from 'react-router-dom'\nimport imgUrl from '../../../assets/YouTube-Logo.wine.svg'\n\n\nconst LeftNav = () => {\n  return (\n    <div className='menu-logo'>\n      <button className='icon-container burgerMenu'>\n        <IoMenu size={25}/>\n      </button>\n\n    <div className='logo-container'>\n      <Link>\n        <img src={imgUrl} alt=\"youtube logo\" />\n      </Link>\n    </div>\n\n\n    </div>\n  )\n}\n\nexport default LeftNav\n"
+    },
+    "src/widget/components.NavigationBar.SearchBar.index": {
+      "code": "import { ImSearch } from 'react-icons/im';\nimport { MdKeyboardVoice } from 'react-icons/md'\n\nconst SearchBar = () => {\n  return (\n    <div className='SearchBar'>\n      <form>\n        <input type='text' name='search' placeholder='Search' />\n        <button type='submit'>\n          <ImSearch size={20} />\n        </button>\n      </form>\n\n      <button className='icon-container voiceIcon'>\n <MdKeyboardVoice size={25}/>\n      </button>\n    </div>\n  );\n};\n\nexport default SearchBar;\n"
+    },
+    "src/widget/components.NavigationBar.RightNav.index": {
+      "code": "import { MdApps, MdNotifications, MdVideoCall } from 'react-icons/md';\n\nconst RightNav = () => {\n  return <div className='buttons'>\n    <button className='icon-container'>\n      <MdVideoCall size={25} />\n    </button>\n\n    <button className='icon-container'>\n      <MdApps size={25} />\n    </button>\n\n\n    <button className='icon-container'>\n      <MdNotifications size={25} />\n    </button>\n\n<ReactTooltip />\n  </div>;\n};\n\nexport default RightNav;\n"
+    }
+  }
+}
