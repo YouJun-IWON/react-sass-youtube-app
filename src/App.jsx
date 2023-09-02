@@ -8,9 +8,9 @@ import SideBar from './components/SideBar';
 const Layout = () => {
   return (
     <>
-      <main>
         <NavigationBar />
         <SideBar />
+      <main>
         <Outlet></Outlet>
       </main>
     </>
